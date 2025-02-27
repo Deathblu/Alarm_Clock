@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+d`timescale 1ns / 1ps
 
 module alarm(
  input reset,  /* Active high reset pulse, to set the time to the input hour and minute (as defined by the H_in1, H_in0, M_in1, and M_in0 inputs) and the second to 00. It should also set the alarm value to 0.00.00, and to set the Alarm (output) low.For normal operation, this input pin should be 0*/
@@ -38,7 +38,7 @@ module alarm(
  reg [3:0] c_sec1,a_sec1;
 /* The most significant second digit of the temp clock and alarm.*/ 
  reg [3:0] c_sec0,a_sec0;
-/* The least significant minute digit of the temp clock and alarm.*/ 
+/* The least significant second digit of the temp clock and alarm.*/ 
  
  /*****************function mod10******************/
  function [3:0] mod_10;
